@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar';
 import {FaInstagram, FaFacebook, FaLinkedin, FaGithub} from 'react-icons/fa';
+import { FaChevronDown } from "react-icons/fa";
 import UnizuluLogo from '../img/UNIZULU.png';
 
 const Home = () => {
@@ -9,27 +10,27 @@ const Home = () => {
     <div className='z-20 absolute w-full'>
     <Navbar />
     </div>
-    <div className='bg-gray-900 w-full h-screen grid grid-cols-1 md:grid-cols-2 items-center p-5 gap-5'>
+    <div className='bg-gray-900 place-content-center place-items-center w-full min-h-screen flex flex-col md:flex-row items-center p-5 gap-5 py-16'>
 
         {/* Text Section */}
-        <div className='p-5 w-full text-white'>
+l        <div className='p-5 w-ful text-white order-2 md:order-1'>
             <h2 className='text-xl text-gray-400 font-thin'>Computer Science and Hydrology Graduate</h2>
-            <h1 className='text-5xl font-poppins text-shadow-xl'>Hi, I'm <span className='text-accent'>Emanuel Mhlanga</span></h1>
-            <p className='text-md font-thin text-shadow-sm'> I passionately want to get into the tech workforce offically as a Graduate in Computer Science.
+            <h1 className='text-4xl md:text-5xl font-poppins text-shadow-xl'>Hi, I'm <span className='text-accent'>Emanuel Mhlanga</span></h1>
+            <p className=' text-sm md:text-md font-thin text-shadow-sm'> I passionately want to get into the tech workforce offically as a Graduate in Computer Science.
                 I've Always had a passion and thorough understanding for tedchnology and have seeked to greatly improve my skills
                 and relevants in the technological society. As a South African there's not a lot of advancements to be made
                 yet which is why i am enthusiastic to usher the country into the 4th industrial revolution through technology
             </p>
 
-        <div className='flex  gap-7 py-5'>
+        <div className='flex flex-wrap md:flex-row gap-7 py-5'>
           
           <a href="#">
               <FaInstagram className='text-4xl hover:text-yellow-300 text-white duration-300 text-shadow-xl'/>
           </a>
-          <a href="#">
+          <a href="https://www.linkedin.com/in/emanuel-mhlanga-1aaa49279/">
               <FaLinkedin className='text-4xl hover:text-yellow-300 text-white duration-300 text-shadow-xl'/>
           </a>
-          <a href="#">
+          <a href="https://github.com/emza-pharaoh">
               <FaGithub className='text-4xl hover:text-yellow-300 text-white duration-300 text-shadow-xl'/>
           </a>
           <a href="#">
@@ -38,15 +39,17 @@ const Home = () => {
           <a href="/resume.pdf" download className='btn-primary'>
                 Download CV            
           </a>
+
+          
           
 
           </div>
         </div>
 
         {/* Image */}
-        <div className='w-full h-full/2 place-items-center bg-center'>
-        <div className='self-center border size-96 '>
-            <img src="" alt="EBM" />
+        <div className='w-full h-full  md:h-full/2 place-items-center bg-center order-1 md:order-2 md:mr-20'>
+        <div className='ml-[18px] md:ml-0  w-[300px] h-[300px] md:size-96 '>
+            <img className='border-primary rounded-2xl' src='Me3.jpeg' alt="EBM" />
         </div>
 
         </div>
@@ -54,6 +57,7 @@ const Home = () => {
 
 
     </div>
+
     
     
     </>

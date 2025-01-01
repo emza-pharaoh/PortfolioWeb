@@ -16,6 +16,7 @@ export default {
         primary: "#223634",
         secondary: "#1c2a18",
         accent: "#22c55e",
+        backgroundcolor: "bg-gray-900"
         
       },
       container: {

@@ -57,17 +57,19 @@ const ServiceData = [
     <Navbar />
     </div>
 
-    <div className='bg-gray-900 w-full h-screen  p-20 place-content-center  '>
+    <div className='bg-gray-900 w-full h-screen p-5 md:p-20 place-content-center '>
 
-      <div className=' grid grid-cols-1 md:grid-cols-2 gap-2 h-screen md:h-[400px] 
+      <h1 className="text-4xl font-semibold py-2 mt-10  md:mt-0 text-center text-accent text-shadow-lg animate-pulse">My Services</h1>
+
+      <div className=' grid grid-cols-1 mb-10 md:grid-cols-2 gap-2 h-96 md:h-[100%] md:h-[400px] 
       overflow-y-scroll overflow-x-hidden scrollbar-track-transparent 
       scrollbar scrollbar-thin scrollbar-thumb-accent
-       scroll-smooth'>
+       scroll-smooth border border-primary rounded-md '>
 
         {ServiceData.map((Data) => {
           return (
             <>
-          <div className='border border-primary rounded-lg p-5 shadow-xl  hover:bg-primary group'>
+          <div className='border border-primary rounded-lg p-5 m-2 shadow-xl  hover:bg-primary group'>
           <h1 className='text-3xl text-gray-300 group-hover:animate-pulse text-shadow-lg font-poppins'><span className='text-5xl text-accent p-3 '>{Data.num}</span>{Data.title}</h1>
           <p className='text-lg font-thin text-shadow-sm text-white'>{Data.description}</p>
 
