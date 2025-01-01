@@ -5,7 +5,7 @@ import {MenuLinks} from './Navbar';
 const SideBarView = ({showMenu}) => {
   return (
     <div className={`${showMenu ? "left-0" : "left-[-100%]"}
-     fixed bottom-0 top-0 w-[75%]
+     fixed bottom-0 top-0 w-[75%] h-screen
      transition-all duration-300 pt-10 px-8 
      bg-primary shadow-2xl z-50 text-white` }>
         <div className='card'>
