@@ -79,7 +79,7 @@ const ContactMe = () => {
             <div className=' rounded-md flex flex-col gap-3 m-1 h-full'>
 
                 {/* Predefined Subject Line */}
-                <input type="hidden" name="subject" value="DentistCo Client"></input>
+                <input type="hidden" name="subject" value="Message From My Portfolio Website"></input>
 
                 {/* First Name & Last Name */}
                 <div className='flex flex-row gap-2 ml-5 mr-5'>
