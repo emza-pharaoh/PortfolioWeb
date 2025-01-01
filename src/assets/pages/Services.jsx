@@ -53,15 +53,15 @@ const ServiceData = [
 
   return (
     <>
-    <div className='z-20 absolute w-full'>
+    <div data-aos="fade-in" data-aos-duration="200" className='z-20 absolute w-full'>
     <Navbar />
     </div>
 
-    <div className='bg-gray-900 w-full h-screen p-5 md:p-20 place-content-center '>
+    <div  className='bg-gray-900 w-full h-screen p-5 md:p-20 place-content-center '>
 
-      <h1 className="text-4xl font-semibold py-2 mt-10  md:mt-0 text-center text-accent text-shadow-lg animate-pulse">My Services</h1>
+      <h1 data-aos="fade-in" data-aos-duration="400" className="text-4xl font-semibold py-2 mt-10  md:mt-0 text-center text-accent text-shadow-lg animate-pulse">My Services</h1>
 
-      <div className=' grid grid-cols-1 mb-10 md:grid-cols-2 gap-2 h-96 md:h-[100%] md:h-[400px] 
+      <div data-aos="fade-up" data-aos-duration="800" className=' grid grid-cols-1 mb-10 md:grid-cols-2 gap-2 h-96 md:h-[100%] md:h-[400px] 
       overflow-y-scroll overflow-x-hidden scrollbar-track-transparent 
       scrollbar scrollbar-thin scrollbar-thumb-accent
        scroll-smooth border border-primary rounded-md '>

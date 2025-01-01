@@ -6,14 +6,14 @@ import UnizuluLogo from '../img/UNIZULU.png';
 
 const Home = () => {
   return (
-    <>
-    <div className='z-20 absolute w-full'>
+    < >
+    <div data-aos="fade-in" data-aos-duration="200" className='z-20 absolute w-full'>
     <Navbar />
     </div>
-    <div className='bg-gray-900 place-content-center place-items-center w-full min-h-screen flex flex-col md:flex-row items-center p-5 gap-5 py-16'>
+    <div  className='bg-gray-900 place-content-center place-items-center w-full min-h-screen flex flex-col md:flex-row items-center p-5 gap-5 py-16'>
 
         {/* Text Section */}
-l        <div className='p-5 w-ful text-white order-2 md:order-1'>
+l        <div className='p-5 w-ful text-white order-2 md:order-1' data-aos="fade-up" data-aos-duration="800">
             <h2 className='text-xl text-gray-400 font-thin'>Computer Science and Hydrology Graduate</h2>
             <h1 className='text-4xl md:text-5xl font-poppins text-shadow-xl'>Hi, I'm <span className='text-accent'>Emanuel Mhlanga</span></h1>
             <p className=' text-sm md:text-md font-thin text-shadow-sm'> I passionately want to get into the tech workforce offically as a Graduate in Computer Science.
@@ -47,7 +47,7 @@ l        <div className='p-5 w-ful text-white order-2 md:order-1'>
         </div>
 
         {/* Image */}
-        <div className='w-full h-full  md:h-full/2 place-items-center bg-center order-1 md:order-2 md:mr-20'>
+        <div data-aos="fade-in" data-aos-duration="400" className='w-full h-full  md:h-full/2 place-items-center bg-center order-1 md:order-2 md:mr-20'>
         <div className='ml-[18px] md:ml-0  w-[300px] h-[300px] md:size-96 '>
             <img className='border-primary rounded-2xl' src='Me3.jpeg' alt="EBM" />
         </div>

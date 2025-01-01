@@ -47,16 +47,16 @@ const ProjectData = [
 const Projects = () => {
   return (
     <>
-    <div className='z-20 absolute w-full'>
+    <div  data-aos="fade-in" data-aos-duration="200" className='z-20 absolute w-full'>
     <Navbar />
     </div>
 
     <div className='bg-gray-900 place-content-center place-items-center w-full min-h-screen items-center p-5  py-16'>
       
-    <h1 className="text-3xl font-bold text-accent text-center my-3 animate-pulse text-shadow-xl">Projects</h1>
+    <h1  data-aos="fade-down" data-aos-duration="300" className="text-3xl font-bold text-accent text-center my-3 animate-pulse text-shadow-xl">Projects</h1>
 
       
-      <div className="border border-primary rounded-xl  h-[480px] md:h-[460px] md:h-[400px] 
+      <div  data-aos="fade-up" data-aos-duration="700" className="border border-primary rounded-xl  h-[480px] md:h-[460px] md:h-[400px] 
        overflow-y-scroll scrollbar scrollbar-thin scrollbar-track-transparent scrollbar-thumb-accent ">
           {ProjectData.map((Data) => {
             return(
