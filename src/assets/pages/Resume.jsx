@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar';
 import Tabs from '../components/Tabs';
+import NavBtns from '../components/NavBtns';
 
 const Resume = () => {
   return (
@@ -16,6 +17,9 @@ const Resume = () => {
       </div>
     </div>
     
+    <div className="fixed bottom-4 right-1 md:right-full md:left-1/2 transform md:-translate-x-1/2 bg-transparent text-white p-2 rounded-lg">
+        <NavBtns location="Resume" />
+    </div>
     </>
   )
 }

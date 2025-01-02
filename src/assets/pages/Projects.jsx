@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar';
 import {FaPython, FaJava, FaJs, FaHtml5, FaCss3Alt, FaReact, FaNode, FaBootstrap} from "react-icons/fa";
 import {TbSql} from "react-icons/tb";
+import NavBtns from '../components/NavBtns';
 
 const ProjectData = [
   {
@@ -53,10 +54,10 @@ const Projects = () => {
 
     <div className='bg-gray-900 place-content-center place-items-center w-full min-h-screen items-center p-5  py-16'>
       
-    <h1  data-aos="fade-down" data-aos-duration="300" className="text-3xl font-bold text-accent text-center my-3 animate-pulse text-shadow-xl">Projects</h1>
+    <h1  className="text-3xl font-bold text-accent text-center my-3 animate-pulse text-shadow-xl">Projects</h1>
 
       
-      <div  data-aos="fade-up" data-aos-duration="700" className="border border-primary rounded-xl  h-[480px] md:h-[460px] md:h-[400px] 
+      <div  data-aos="fade-up" data-aos-duration="700" className="border border-primary rounded-xl  h-[480px] xl:h-[600px] md:h-[460px]
        overflow-y-scroll scrollbar scrollbar-thin scrollbar-track-transparent scrollbar-thumb-accent ">
           {ProjectData.map((Data) => {
             return(
@@ -107,14 +108,17 @@ const Projects = () => {
 
               </div>
               
-                
+            
               </>
             )
           })}
       </div>
 
     </div>
-
+      
+    <div className="fixed bottom-4 right-1 md:right-full md:left-1/2 transform md:-translate-x-1/2 bg-transparent text-white p-2 rounded-lg">
+                <NavBtns location="Projects" />
+            </div>
     </>
   )
 }

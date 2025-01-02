@@ -1,8 +1,8 @@
 import React from 'react'
 import Navbar from '../components/Navbar';
+import NavBtns from '../components/NavBtns';
 import {FaInstagram, FaFacebook, FaLinkedin, FaGithub} from 'react-icons/fa';
-import { FaChevronDown } from "react-icons/fa";
-import UnizuluLogo from '../img/UNIZULU.png';
+import { GrLinkNext, GrLinkPrevious } from "react-icons/gr";
 
 const Home = () => {
   return (
@@ -10,10 +10,13 @@ const Home = () => {
     <div data-aos="fade-in" data-aos-duration="200" className='z-20 absolute w-full'>
     <Navbar />
     </div>
+
+      
+
     <div  className='bg-gray-900 place-content-center place-items-center w-full min-h-screen flex flex-col md:flex-row items-center p-5 gap-5 py-16'>
 
         {/* Text Section */}
-l        <div className='p-5 w-ful text-white order-2 md:order-1' data-aos="fade-up" data-aos-duration="800">
+         <div className='p-5 w-ful text-white order-2 md:order-1' data-aos="fade-up" data-aos-duration="800">
             <h2 className='text-xl text-gray-400 font-thin'>Computer Science and Hydrology Graduate</h2>
             <h1 className='text-4xl md:text-5xl font-poppins text-shadow-xl'>Hi, I'm <span className='text-accent'>Emanuel Mhlanga</span></h1>
             <p className=' text-sm md:text-md font-thin text-shadow-sm'> I passionately want to get into the tech workforce offically as a Graduate in Computer Science.
@@ -56,6 +59,10 @@ l        <div className='p-5 w-ful text-white order-2 md:order-1' data-aos="fade
         
 
 
+    </div>
+    
+    <div className="fixed bottom-4 right-1 md:right-full md:left-1/2 transform md:-translate-x-1/2 bg-transparent text-white p-2 rounded-lg">
+        <NavBtns location="Home" />
     </div>
 
     

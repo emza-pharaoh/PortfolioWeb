@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import ContactMe from '../components/ContactMe';
-
+import NavBtns from '../components/NavBtns';
 
 const Contact = () => {
   return (
@@ -18,7 +18,9 @@ const Contact = () => {
 
     </div>
     
-    
+    <div className="fixed bottom-4 right-1 md:right-full md:left-1/2 transform md:-translate-x-1/2 bg-transparent text-white p-2 rounded-lg">
+        <NavBtns location="Contact" />
+    </div>
     </>
   )
 }
