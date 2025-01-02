@@ -27,18 +27,14 @@ const Home = () => {
 
         <div className='flex flex-wrap md:flex-row gap-7 py-5'>
           
-          <a href="#">
-              <FaInstagram className='text-4xl hover:text-yellow-300 text-white duration-300 text-shadow-xl'/>
-          </a>
+          
           <a href="https://www.linkedin.com/in/emanuel-mhlanga-1aaa49279/">
               <FaLinkedin className='text-4xl hover:text-yellow-300 text-white duration-300 text-shadow-xl'/>
           </a>
           <a href="https://github.com/emza-pharaoh">
               <FaGithub className='text-4xl hover:text-yellow-300 text-white duration-300 text-shadow-xl'/>
           </a>
-          <a href="#">
-              <FaFacebook className='text-4xl hover:text-yellow-300 text-white duration-300 text-shadow-xl'/>
-          </a>
+          
           <a href="/resume.pdf" download className='btn-primary'>
                 Download CV            
           </a>
