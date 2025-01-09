@@ -206,7 +206,7 @@ const Tabs = () => {
                     <div className="mt-5 mb-1">
                     {Data.subjects ? (<></>) : (
                         <>
-                      <a href="/resume.pdf" download className='group-hover:bg-green-700 animate-pulse btn-primary p-2 shadow-2xl text-shadow-xl text-gray-300'>
+                      <a href="/AR.PDF" download className='group-hover:bg-green-700 animate-pulse btn-primary p-2 shadow-2xl text-shadow-xl text-gray-300'>
                         Download Academic Record        
                       </a></>
                     )}
